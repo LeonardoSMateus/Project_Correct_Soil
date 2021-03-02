@@ -4,7 +4,7 @@ package com.soil;
  * Hello world!
  *
  */
-public class App extends Potassio
+public class App
 {
     public static void main( String[] args )
     {
@@ -29,15 +29,15 @@ public class App extends Potassio
     public static void CalculosTeorfosforo()
     {
         double valor_f=0;
-        Potassio p = new Potassio();
-        p.setText_fos(1);
-        if(p.getText_fos() == 1){
+        Fosforo f = new Fosforo();
+        f.setText_fos(1);
+        if(f.getText_fos() == 1){
             valor_f = 9;
-        }else if(p.getText_fos() == 2){
+        }else if(f.getText_fos() == 2){
             valor_f = 12;
         }
-        p.setFosforo(valor_f);
-        System.out.println(p.getFosforo());
+        f.setFosforo(valor_f);
+        System.out.println(f.getFosforo());
 
     }
 }

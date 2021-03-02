@@ -1,6 +1,6 @@
 package com.soil;
 
-public class Fosforo {
+public class Fosforo extends App{
     private double valor_fosforo;
     private double text_fos;
 
