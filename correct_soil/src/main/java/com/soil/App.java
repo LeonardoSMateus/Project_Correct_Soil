@@ -11,10 +11,19 @@ public class App
         double teor_fosforo=0;
         double teor_calcio=0;
         double teor_potassio=0;
+        double teor_magnesio=0;
+
         
         teor_potassio = CalculosTeorPotassio(); 
         teor_fosforo = CalculosTeorfosforo(); 
         teor_calcio =  CalculosTeorCalcio();
+        teor_magnesio =  CalculosTeorMagnesio();
+
+        System.out.println(teor_potassio);
+        System.out.println(teor_fosforo);
+        System.out.println(teor_calcio);
+        System.out.println(teor_magnesio);
+
     }
     public static double CalculosTeorPotassio()
     {
@@ -56,6 +65,21 @@ public class App
         }
         c.setCalcio(valor_c);
         return (c.getFosforo());
+
+    }
+
+    public static double CalculosTeorMagnesio()
+    {
+        double valor_m=0;
+        Magnesio m = new Magnesio();
+        m.setText_mag(1);
+        if(m.getText_mag() == 1){
+            valor_m = 1.5;
+        }else if(m.getText_mag() == 2){
+            valor_m = 1;
+        }
+        m.setMagnesio(valor_m);
+        return (m.getMagnesio());
 
     }
 }
