@@ -1,6 +1,6 @@
 package com.soil;
 
-public class Potassio {
+public class Potassio extends Fosforo {
     private double valor_potassio;
     private double text_pot;
     private double v_p = 0.35;
