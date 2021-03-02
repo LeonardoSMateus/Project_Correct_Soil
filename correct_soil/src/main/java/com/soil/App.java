@@ -8,12 +8,15 @@ public class App
 {
     public static void main( String[] args )
     {
-        double valor_f=0;
+        double teor_fosforo=0;
+        double teor_calcio=0;
+        double teor_potassio=0;
         
-        CalculosTeorPotassio(); 
-        CalculosTeorfosforo(); 
+        teor_potassio = CalculosTeorPotassio(); 
+        teor_fosforo = CalculosTeorfosforo(); 
+        teor_calcio =  CalculosTeorCalcio();
     }
-    public static void CalculosTeorPotassio()
+    public static double CalculosTeorPotassio()
     {
         double valor_p=0;
         Potassio p = new Potassio();
@@ -24,9 +27,9 @@ public class App
             valor_p = 0.25;
         }
         p.setPotassio(valor_p);
-        System.out.println(p.getPotassio());
+        return (p.getPotassio());
     }
-    public static void CalculosTeorfosforo()
+    public static double CalculosTeorfosforo()
     {
         double valor_f=0;
         Fosforo f = new Fosforo();
@@ -37,7 +40,22 @@ public class App
             valor_f = 12;
         }
         f.setFosforo(valor_f);
-        System.out.println(f.getFosforo());
+        return f.getFosforo();
+
+    }
+
+    public static double CalculosTeorCalcio()
+    {
+        double valor_c=0;
+        Calcio c = new Calcio();
+        c.setText_cal(1);
+        if(c.getText_cal() == 1){
+            valor_c = 6;
+        }else if(c.getText_cal() == 2){
+            valor_c = 4;
+        }
+        c.setCalcio(valor_c);
+        return (c.getFosforo());
 
     }
 }
