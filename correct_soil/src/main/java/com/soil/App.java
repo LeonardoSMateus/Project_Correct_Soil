@@ -12,17 +12,20 @@ public class App
         double teor_calcio=0;
         double teor_potassio=0;
         double teor_magnesio=0;
-
+        double teor_enxofre =0;
+        double teor_aluminio = 0;
         
         teor_potassio = CalculosTeorPotassio(); 
         teor_fosforo = CalculosTeorfosforo(); 
         teor_calcio =  CalculosTeorCalcio();
         teor_magnesio =  CalculosTeorMagnesio();
+        teor_enxofre = CalculosTeorEnxofre();
 
         System.out.println(teor_potassio);
         System.out.println(teor_fosforo);
         System.out.println(teor_calcio);
         System.out.println(teor_magnesio);
+        System.out.println(teor_enxofre);
 
     }
     public static double CalculosTeorPotassio()
@@ -80,6 +83,20 @@ public class App
         }
         m.setMagnesio(valor_m);
         return (m.getMagnesio());
+
+    }
+    public static double CalculosTeorEnxofre()
+    {
+        double valor_e=0;
+        Enxofre e = new Enxofre();
+        e.setText_enx(1);
+        if(e.getText_enx() == 1){
+            valor_e = 9;
+        }else if(e.getText_enx() == 2){
+            valor_e = 6;
+        }
+        e.setEnxofre(valor_e);
+        return (e.getEnxofre());
 
     }
 }
