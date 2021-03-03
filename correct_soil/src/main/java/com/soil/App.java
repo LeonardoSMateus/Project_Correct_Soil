@@ -12,6 +12,9 @@ public class App
     public static void main( String[] args )
     {
         S_Cmol s_cmol = new S_Cmol();
+        Ctc_Cmol ctc_cmol = new Ctc_Cmol();
+        V_Atual v_at = new V_Atual();
+
         double teor_fosforo=0;
         double teor_calcio=0;
         double teor_potassio=0;
@@ -19,25 +22,32 @@ public class App
         double teor_enxofre =0;
         double teor_aluminio = 0;
         double h_Al=0;
+        double result_Scmol=0;
+        double result_CTCcmol=0;
+        double result_V_At=0;
         h_Al = H_AL();
        
 
-
-        double result_cmol=0;
+        
         teor_potassio = CalculosTeorPotassio(); 
         teor_fosforo = CalculosTeorfosforo(); 
         teor_calcio =  CalculosTeorCalcio();
         teor_magnesio =  CalculosTeorMagnesio();
         teor_enxofre = CalculosTeorEnxofre();
-        result_cmol = s_cmol.S_cmol(teor_calcio, teor_magnesio, teor_potassio);
-        
-        System.out.println(result_cmol);
+        result_V_At = v_at.V_At(teor_calcio, teor_magnesio, teor_potassio, h_Al);
+        result_Scmol = s_cmol.S_cmol(teor_calcio, teor_magnesio, teor_potassio);
+        result_CTCcmol = ctc_cmol.CTC_cmol(teor_calcio, teor_magnesio, teor_potassio,h_Al);
+        System.out.printf("Resultado S Cmol = %.2f\n",result_Scmol);
+        System.out.printf("Resultado CTC Cmol = %.2f\n",result_CTCcmol);
+        System.out.printf("Resultado V Atual = %.2f\n",result_V_At);
 
-        System.out.println(teor_potassio);
-        System.out.println(teor_fosforo);
-        System.out.println(teor_calcio);
-        System.out.println(teor_magnesio);
-        System.out.println(teor_enxofre);
+
+
+        System.out.printf("Teor Potassio = %.2f\n",teor_potassio);
+        System.out.printf("Teor Fosforo = %.2f\n",teor_fosforo);
+        System.out.printf("Teor Calcio = %.2f\n",teor_calcio);
+        System.out.printf("Teor Magnesio = %.2f\n",teor_magnesio);
+        System.out.printf("Teor Enxofre = %.2f\n",teor_enxofre);
 
     }
     public static double CalculosTeorPotassio()
