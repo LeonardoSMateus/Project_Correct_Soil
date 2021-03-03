@@ -52,9 +52,13 @@ public class App
     }
     public static double CalculosTeorPotassio()
     {
-        double valor_p=0;
         Potassio p = new Potassio();
-        p.setText_pot(1);
+        double valor_p=0;
+        double teor_p=0;
+        Scanner ler = new Scanner(System.in);
+        System.out.printf("Informe o Teor do Potassio = ");
+        teor_p = ler.nextDouble();
+        p.setText_pot(teor_p);
         if(p.getText_pot() == 1){
             valor_p = 0.35;
         }else if(p.getText_pot() ==2){
@@ -67,7 +71,11 @@ public class App
     {
         double valor_f=0;
         Fosforo f = new Fosforo();
-        f.setText_fos(1);
+        double teor_f=0;
+        Scanner ler = new Scanner(System.in);
+        System.out.printf("Informe o Teor do Fosforo = ");
+        teor_f = ler.nextDouble();
+        f.setText_fos(teor_f);
         if(f.getText_fos() == 1){
             valor_f = 9;
         }else if(f.getText_fos() == 2){
@@ -82,7 +90,11 @@ public class App
     {
         double valor_c=0;
         Calcio c = new Calcio();
-        c.setText_cal(1);
+        double teor_c=0;
+        Scanner ler = new Scanner(System.in);
+        System.out.printf("Informe o Teor do Calcio = ");
+        teor_c = ler.nextDouble();
+        c.setText_cal(teor_c);
         if(c.getText_cal() == 1){
             valor_c = 6;
         }else if(c.getText_cal() == 2){
@@ -97,7 +109,11 @@ public class App
     {
         double valor_m=0;
         Magnesio m = new Magnesio();
-        m.setText_mag(1);
+        double teor_m=0;
+        Scanner ler = new Scanner(System.in);
+        System.out.printf("Informe o Teor do Magnesio = ");
+        teor_m = ler.nextDouble();
+        m.setText_mag(teor_m);
         if(m.getText_mag() == 1){
             valor_m = 1.5;
         }else if(m.getText_mag() == 2){
@@ -111,7 +127,11 @@ public class App
     {
         double valor_e=0;
         Enxofre e = new Enxofre();
-        e.setText_enx(1);
+        double teor_e=0;
+        Scanner ler = new Scanner(System.in);
+        System.out.printf("Informe o Teor do Enxofre = ");
+        teor_e = ler.nextDouble();
+        e.setText_enx(teor_e);
         if(e.getText_enx() == 1){
             valor_e = 9;
         }else if(e.getText_enx() == 2){
