@@ -4,22 +4,34 @@ package com.soil;
  * Hello world!
  *
  */
+import java.util.Scanner;
+
 public class App
 {
+    
     public static void main( String[] args )
     {
+        S_Cmol s_cmol = new S_Cmol();
         double teor_fosforo=0;
         double teor_calcio=0;
         double teor_potassio=0;
         double teor_magnesio=0;
         double teor_enxofre =0;
         double teor_aluminio = 0;
-        
+        double h_Al=0;
+        h_Al = H_AL();
+       
+
+
+        double result_cmol=0;
         teor_potassio = CalculosTeorPotassio(); 
         teor_fosforo = CalculosTeorfosforo(); 
         teor_calcio =  CalculosTeorCalcio();
         teor_magnesio =  CalculosTeorMagnesio();
         teor_enxofre = CalculosTeorEnxofre();
+        result_cmol = s_cmol.S_cmol(teor_calcio, teor_magnesio, teor_potassio);
+        
+        System.out.println(result_cmol);
 
         System.out.println(teor_potassio);
         System.out.println(teor_fosforo);
@@ -99,4 +111,14 @@ public class App
         return (e.getEnxofre());
 
     }
+    public static double H_AL()
+    {
+        double h_Al=0;
+        Scanner ler = new Scanner(System.in);
+        System.out.printf("Informe o H + AL = ");
+        h_Al = ler.nextDouble();
+        return (h_Al);
+
+    }
+
 }
