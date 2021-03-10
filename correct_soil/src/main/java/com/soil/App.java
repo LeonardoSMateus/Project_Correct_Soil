@@ -69,75 +69,75 @@ public class App
     }
     public static double CalculosTeorfosforo()
     {
-        double valor_f=0;
+        double valor_fosforo=0;
         Fosforo f = new Fosforo();
-        double teor_f=0;
+        double teor_fosforo=0;
         Scanner ler = new Scanner(System.in);
         System.out.printf("Informe o Teor do Fosforo = ");
-        teor_f = ler.nextDouble();
-        f.setText_fos(teor_f);
+        teor_fosforo = ler.nextDouble();
+        f.setText_fos(teor_fosforo);
         if(f.getText_fos() == 1){
-            valor_f = 9;
+            valor_fosforo = 9;
         }else if(f.getText_fos() == 2){
-            valor_f = 12;
+            valor_fosforo = 12;
         }
-        f.setFosforo(valor_f);
+        f.setFosforo(valor_fosforo);
         return f.getFosforo();
 
     }
 
     public static double CalculosTeorCalcio()
     {
-        double valor_c=0;
+        double valor_calcio=0;
         Calcio c = new Calcio();
-        double teor_c=0;
+        double teor_calcio=0;
         Scanner ler = new Scanner(System.in);
         System.out.printf("Informe o Teor do Calcio = ");
-        teor_c = ler.nextDouble();
-        c.setText_cal(teor_c);
+        teor_calcio = ler.nextDouble();
+        c.setText_cal(teor_calcio);
         if(c.getText_cal() == 1){
-            valor_c = 6;
+            valor_calcio = 6;
         }else if(c.getText_cal() == 2){
-            valor_c = 4;
+            valor_calcio = 4;
         }
-        c.setCalcio(valor_c);
+        c.setCalcio(valor_calcio);
         return (c.getFosforo());
 
     }
 
     public static double CalculosTeorMagnesio()
     {
-        double valor_m=0;
+        double valor_magnesio=0;
         Magnesio m = new Magnesio();
-        double teor_m=0;
+        double teor_magnesio=0;
         Scanner ler = new Scanner(System.in);
         System.out.printf("Informe o Teor do Magnesio = ");
-        teor_m = ler.nextDouble();
-        m.setText_mag(teor_m);
+        teor_magnesio = ler.nextDouble();
+        m.setText_mag(teor_magnesio);
         if(m.getText_mag() == 1){
-            valor_m = 1.5;
+            valor_magnesio = 1.5;
         }else if(m.getText_mag() == 2){
-            valor_m = 1;
+            valor_magnesio = 1;
         }
-        m.setMagnesio(valor_m);
+        m.setMagnesio(valor_magnesio);
         return (m.getMagnesio());
 
     }
     public static double CalculosTeorEnxofre()
     {
-        double valor_e=0;
+        double valor_enxofre=0;
         Enxofre e = new Enxofre();
-        double teor_e=0;
+        double teor_enxofre=0;
         Scanner ler = new Scanner(System.in);
         System.out.printf("Informe o Teor do Enxofre = ");
-        teor_e = ler.nextDouble();
-        e.setText_enx(teor_e);
+        teor_enxofre = ler.nextDouble();
+        e.setText_enx(teor_enxofre);
         if(e.getText_enx() == 1){
-            valor_e = 9;
+            valor_enxofre = 9;
         }else if(e.getText_enx() == 2){
-            valor_e = 6;
+            valor_enxofre = 6;
         }
-        e.setEnxofre(valor_e);
+        e.setEnxofre(valor_enxofre);
         return (e.getEnxofre());
 
     }
