@@ -53,18 +53,18 @@ public class App
     public static double CalculosTeorPotassio()
     {
         Potassio p = new Potassio();
-        double valor_p=0;
-        double teor_p=0;
+        double valor_potassio=0;
+        double teor_potassio=0;
         Scanner ler = new Scanner(System.in);
         System.out.printf("Informe o Teor do Potassio = ");
-        teor_p = ler.nextDouble();
-        p.setText_pot(teor_p);
+        teor_potassio = ler.nextDouble();
+        p.setText_pot(teor_potassio);
         if(p.getText_pot() == 1){
-            valor_p = 0.35;
+            valor_potassio = 0.35;
         }else if(p.getText_pot() ==2){
-            valor_p = 0.25;
+            valor_potassio = 0.25;
         }
-        p.setPotassio(valor_p);
+        p.setPotassio(valor_potassio);
         return (p.getPotassio());
     }
     public static double CalculosTeorfosforo()

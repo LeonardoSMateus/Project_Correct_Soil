@@ -3,8 +3,6 @@ package com.soil;
 public class Potassio extends App {
     private double valor_potassio;
     private double text_pot;
-    private double v_p = 0.35;
-    private double v_p2 = 0.25;
 
     public void setText_pot(double val)
     {
