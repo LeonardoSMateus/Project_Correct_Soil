@@ -52,93 +52,80 @@ public class App
     }
     public static double CalculosTeorPotassio()
     {
-        Variaveis p = new Variaveis();
         double valor_potassio=0;
         double teor_potassio=0;
         Scanner ler = new Scanner(System.in);
         System.out.printf("Informe o Teor do Potassio = ");
         teor_potassio = ler.nextDouble();
-        p.setText_pot(teor_potassio);
-        if(p.getText_pot() == 1){
+        if(teor_potassio == 1){
             valor_potassio = 0.35;
-        }else if(p.getText_pot() ==2){
+        }else if(teor_potassio ==2){
             valor_potassio = 0.25;
         }
-        p.setPotassio(valor_potassio);
-        return (p.getPotassio());
+        return valor_potassio;
     }
     public static double CalculosTeorfosforo()
     {
         double valor_fosforo=0;
-        Variaveis f = new Variaveis();
         double teor_fosforo=0;
         Scanner ler = new Scanner(System.in);
         System.out.printf("Informe o Teor do Fosforo = ");
         teor_fosforo = ler.nextDouble();
-        f.setText_fos(teor_fosforo);
-        if(f.getText_fos() == 1){
+        if(teor_fosforo == 1){
             valor_fosforo = 9;
-        }else if(f.getText_fos() == 2){
+        }else if(teor_fosforo == 2){
             valor_fosforo = 12;
         }
-        f.setFosforo(valor_fosforo);
-        return f.getFosforo();
+        
+        return valor_fosforo;
 
     }
 
     public static double CalculosTeorCalcio()
     {
         double valor_calcio=0;
-        Variaveis c = new Variaveis();
         double teor_calcio=0;
         Scanner ler = new Scanner(System.in);
         System.out.printf("Informe o Teor do Calcio = ");
         teor_calcio = ler.nextDouble();
-        c.setText_cal(teor_calcio);
-        if(c.getText_cal() == 1){
+        if(teor_calcio== 1){
             valor_calcio = 6;
-        }else if(c.getText_cal() == 2){
+        }else if(teor_calcio == 2){
             valor_calcio = 4;
         }
-        c.setCalcio(valor_calcio);
-        return (c.getCalcio());
+
+        return valor_calcio;
 
     }
 
     public static double CalculosTeorMagnesio()
     {
         double valor_magnesio=0;
-        Variaveis m = new Variaveis();
         double teor_magnesio=0;
         Scanner ler = new Scanner(System.in);
         System.out.printf("Informe o Teor do Magnesio = ");
         teor_magnesio = ler.nextDouble();
-        m.setText_mag(teor_magnesio);
-        if(m.getText_mag() == 1){
+        if(teor_magnesio == 1){
             valor_magnesio = 1.5;
-        }else if(m.getText_mag() == 2){
+        }else if(teor_magnesio == 2){
             valor_magnesio = 1;
         }
-        m.setMagnesio(valor_magnesio);
-        return (m.getMagnesio());
+        return valor_magnesio;
 
     }
     public static double CalculosTeorEnxofre()
     {
         double valor_enxofre=0;
-        Variaveis e = new Variaveis();
         double teor_enxofre=0;
         Scanner ler = new Scanner(System.in);
         System.out.printf("Informe o Teor do Enxofre = ");
         teor_enxofre = ler.nextDouble();
-        e.setText_enx(teor_enxofre);
-        if(e.getText_enx() == 1){
+        if(teor_enxofre == 1){
             valor_enxofre = 9;
-        }else if(e.getText_enx() == 2){
+        }else if(teor_enxofre == 2){
             valor_enxofre = 6;
         }
-        e.setEnxofre(valor_enxofre);
-        return (e.getEnxofre());
+        return valor_enxofre;
 
     }
     public static double H_AL()
