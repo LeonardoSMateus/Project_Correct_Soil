@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>correct_soil</name>
+	<name>soil-correction-proj</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -22,7 +22,7 @@
 	</natures>
 	<filteredResources>
 		<filter>
-			<id>1614721611782</id>
+			<id>1614707614679</id>
 			<name></name>
 			<type>30</type>
 			<matcher>
