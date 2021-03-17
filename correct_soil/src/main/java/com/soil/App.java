@@ -52,7 +52,7 @@ public class App
     }
     public static double CalculosTeorPotassio()
     {
-        Potassio p = new Potassio();
+        Variaveis p = new Variaveis();
         double valor_potassio=0;
         double teor_potassio=0;
         Scanner ler = new Scanner(System.in);
@@ -70,7 +70,7 @@ public class App
     public static double CalculosTeorfosforo()
     {
         double valor_fosforo=0;
-        Fosforo f = new Fosforo();
+        Variaveis f = new Variaveis();
         double teor_fosforo=0;
         Scanner ler = new Scanner(System.in);
         System.out.printf("Informe o Teor do Fosforo = ");
@@ -89,7 +89,7 @@ public class App
     public static double CalculosTeorCalcio()
     {
         double valor_calcio=0;
-        Calcio c = new Calcio();
+        Variaveis c = new Variaveis();
         double teor_calcio=0;
         Scanner ler = new Scanner(System.in);
         System.out.printf("Informe o Teor do Calcio = ");
@@ -101,14 +101,14 @@ public class App
             valor_calcio = 4;
         }
         c.setCalcio(valor_calcio);
-        return (c.getFosforo());
+        return (c.getCalcio());
 
     }
 
     public static double CalculosTeorMagnesio()
     {
         double valor_magnesio=0;
-        Magnesio m = new Magnesio();
+        Variaveis m = new Variaveis();
         double teor_magnesio=0;
         Scanner ler = new Scanner(System.in);
         System.out.printf("Informe o Teor do Magnesio = ");
@@ -126,7 +126,7 @@ public class App
     public static double CalculosTeorEnxofre()
     {
         double valor_enxofre=0;
-        Enxofre e = new Enxofre();
+        Variaveis e = new Variaveis();
         double teor_enxofre=0;
         Scanner ler = new Scanner(System.in);
         System.out.printf("Informe o Teor do Enxofre = ");
