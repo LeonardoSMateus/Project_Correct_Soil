@@ -31,10 +31,10 @@ public class AppTest
         double resultado = s.S_cmol(1, 1, 1);
         assertEquals(3,resultado,0);
     }
-    
+    @Test
     public void V_Atual(){
         V_Atual v = new V_Atual();
         double resultado = v.V_At(0,0,0,0);
-        assertEquals(0,resultado,0);
+        assertEquals(Double.NaN,resultado,0);
     }
 }
