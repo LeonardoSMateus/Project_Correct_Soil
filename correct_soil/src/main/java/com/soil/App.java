@@ -24,16 +24,41 @@ public class App
         double h_Al=0;
         double result_Scmol=0;
         double result_CTCcmol=0;
-        double result_V_At=0;
-        h_Al = H_AL();
-       
+        double result_V_At=0;        
+        double textura = 1;
 
+        h_Al = 5.35;
+
+
+        if(textura == 1){
+            teor_potassio = 0.35;
+        }else if(textura ==2){
+            teor_potassio = 0.25;
+        }
         
-        teor_potassio = CalculosTeorPotassio(); 
-        teor_fosforo = CalculosTeorfosforo(); 
-        teor_calcio =  CalculosTeorCalcio();
-        teor_magnesio =  CalculosTeorMagnesio();
-        teor_enxofre = CalculosTeorEnxofre();
+
+        if(textura == 1){
+            teor_fosforo = 9;
+        }else if(textura == 2){
+            teor_fosforo = 12;
+        }
+
+        if(textura== 1){
+            teor_calcio = 6;
+        }else if(textura == 2){
+            teor_calcio = 4;
+        }
+        
+        if(textura == 1){
+            teor_magnesio = 1.5;
+        }else if(textura == 2){
+            teor_magnesio = 1;
+        }
+        if(textura == 1){
+            teor_enxofre = 9;
+        }else if(textura == 2){
+            teor_enxofre = 6;
+        }
         result_V_At = v_at.V_At(teor_calcio, teor_magnesio, teor_potassio, h_Al);
         result_Scmol = s_cmol.S_cmol(teor_calcio, teor_magnesio, teor_potassio);
         result_CTCcmol = ctc_cmol.CTC_cmol(teor_calcio, teor_magnesio, teor_potassio,h_Al);
@@ -50,92 +75,8 @@ public class App
         System.out.printf("Teor Enxofre = %.2f\n",teor_enxofre);
 
     }
-    public static double CalculosTeorPotassio()
-    {
-        double valor_potassio=0;
-        double teor_potassio=0;
-        Scanner ler = new Scanner(System.in);
-        System.out.printf("Informe o Teor do Potassio = ");
-        teor_potassio = ler.nextDouble();
-        if(teor_potassio == 1){
-            valor_potassio = 0.35;
-        }else if(teor_potassio ==2){
-            valor_potassio = 0.25;
-        }
-        return valor_potassio;
-    }
-    public static double CalculosTeorfosforo()
-    {
-        double valor_fosforo=0;
-        double teor_fosforo=0;
-        Scanner ler = new Scanner(System.in);
-        System.out.printf("Informe o Teor do Fosforo = ");
-        teor_fosforo = ler.nextDouble();
-        if(teor_fosforo == 1){
-            valor_fosforo = 9;
-        }else if(teor_fosforo == 2){
-            valor_fosforo = 12;
-        }
-        
-        return valor_fosforo;
+    
 
-    }
-
-    public static double CalculosTeorCalcio()
-    {
-        double valor_calcio=0;
-        double teor_calcio=0;
-        Scanner ler = new Scanner(System.in);
-        System.out.printf("Informe o Teor do Calcio = ");
-        teor_calcio = ler.nextDouble();
-        if(teor_calcio== 1){
-            valor_calcio = 6;
-        }else if(teor_calcio == 2){
-            valor_calcio = 4;
-        }
-
-        return valor_calcio;
-
-    }
-
-    public static double CalculosTeorMagnesio()
-    {
-        double valor_magnesio=0;
-        double teor_magnesio=0;
-        Scanner ler = new Scanner(System.in);
-        System.out.printf("Informe o Teor do Magnesio = ");
-        teor_magnesio = ler.nextDouble();
-        if(teor_magnesio == 1){
-            valor_magnesio = 1.5;
-        }else if(teor_magnesio == 2){
-            valor_magnesio = 1;
-        }
-        return valor_magnesio;
-
-    }
-    public static double CalculosTeorEnxofre()
-    {
-        double valor_enxofre=0;
-        double teor_enxofre=0;
-        Scanner ler = new Scanner(System.in);
-        System.out.printf("Informe o Teor do Enxofre = ");
-        teor_enxofre = ler.nextDouble();
-        if(teor_enxofre == 1){
-            valor_enxofre = 9;
-        }else if(teor_enxofre == 2){
-            valor_enxofre = 6;
-        }
-        return valor_enxofre;
-
-    }
-    public static double H_AL()
-    {
-        double h_Al=0;
-        Scanner ler = new Scanner(System.in);
-        System.out.printf("Informe o H + AL = ");
-        h_Al = ler.nextDouble();
-        return (h_Al);
-
-    }
+    
 
 }
