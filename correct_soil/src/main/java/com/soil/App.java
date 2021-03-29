@@ -11,9 +11,7 @@ public class App
     
     public static void main( String[] args )
     {
-        S_Cmol s_cmol = new S_Cmol();
-        Ctc_Cmol ctc_cmol = new Ctc_Cmol();
-        V_Atual v_at = new V_Atual();
+        Calculos_CorrecaoCTC correcaoCtc = new Calculos_CorrecaoCTC();
 
         double teor_fosforo=0;
         double teor_calcio=0;
@@ -24,7 +22,9 @@ public class App
         double h_Al=0;
         double result_Scmol=0;
         double result_CTCcmol=0;
-        double result_V_At=0;        
+        double result_V_At=0;     
+        double mo_percentual = 0;   
+        double calc_carbono = 0;   
         double textura = 1;
 
         h_Al = 5.35;
@@ -59,12 +59,19 @@ public class App
         }else if(textura == 2){
             teor_enxofre = 6;
         }
-        result_V_At = v_at.V_At(teor_calcio, teor_magnesio, teor_potassio, h_Al);
-        result_Scmol = s_cmol.S_cmol(teor_calcio, teor_magnesio, teor_potassio);
-        result_CTCcmol = ctc_cmol.CTC_cmol(teor_calcio, teor_magnesio, teor_potassio,h_Al);
+        result_V_At = correcaoCtc.V_At(teor_calcio, teor_magnesio, teor_potassio, h_Al);
+        result_Scmol = correcaoCtc.S_cmol(teor_calcio, teor_magnesio, teor_potassio);
+        result_CTCcmol = correcaoCtc.CTC_cmol(teor_calcio, teor_magnesio, teor_potassio,h_Al);
+        mo_percentual = correcaoCtc.MO_Percentual(30.7);
+        calc_carbono = correcaoCtc.Calcula_Carbono(30.7);
+
+
         System.out.printf("Resultado S Cmol = %.2f\n",result_Scmol);
         System.out.printf("Resultado CTC Cmol = %.2f\n",result_CTCcmol);
         System.out.printf("Resultado V Atual = %.2f\n",result_V_At);
+        System.out.printf("Resultado Mo_Percentual = %.2f %%\n",mo_percentual);
+        System.out.printf("Resultado Calculo do Carbono = %.2f\n",calc_carbono);
+
 
 
 
