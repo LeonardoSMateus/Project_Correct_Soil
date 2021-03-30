@@ -55,8 +55,6 @@ public class AppTest
     public void quantidadeAplicar(){
         Calculos_CorrecaoFosforo quant = new Calculos_CorrecaoFosforo();
         double resultado = quant.quantidadeAplicar(12,1,8.59,0.7);
-        System.out.printf("q = %.2f\n",resultado);
-
         assertEquals(123.95,resultado,1);
     }
     @Test
@@ -70,5 +68,11 @@ public class AppTest
         Calculos_CorrecaoFosforo valor = new Calculos_CorrecaoFosforo();
         double resultado = valor.enxofre(123.95,1);
         assertEquals(34.71,resultado,1);
+    }
+    @Test
+    public void custoFosforo(){
+        Calculos_CorrecaoFosforo valor = new Calculos_CorrecaoFosforo();
+        double resultado = valor.custoFosforo(1,123.95,1260);
+        assertEquals(156.18,resultado,1);
     }
 }
