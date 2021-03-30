@@ -81,5 +81,26 @@ public class AppTest
         double resultado = valor.potassioCtcSolo(5.76, 1.63, 0.15,5.35);
         assertEquals(1.16,resultado,1);
     }
+    @Test
+    public void potassioDesejada(){
+        Calculos_CorrecaoPotassio valor = new Calculos_CorrecaoPotassio();
+        double resultado = valor.potassioCtcDesejada(1);
+        assertEquals(3,resultado,1);
+    }
+
+    @Test
+    public void custoPotassio(){
+        Calculos_CorrecaoPotassio valor = new Calculos_CorrecaoPotassio();
+        double resultado = valor.custoPotassio(2500, 450.55, 1);
+        assertEquals(1126.37,resultado,1);
+    }
+    @Test
+    public void quantidadeAplicarPotassio(){
+        Calculos_CorrecaoPotassio valor = new Calculos_CorrecaoPotassio();
+        double resultado = valor.quantidadeAplicarPotassio(1,0.15,3.0,valor.potassioCtcSolo(5.76, 1.63, 0.15,5.35));
+        System.out.println(resultado);
+        assertEquals(450.55,resultado,1);
+    }
+
 
 }
