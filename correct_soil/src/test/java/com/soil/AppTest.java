@@ -75,4 +75,11 @@ public class AppTest
         double resultado = valor.custoFosforo(1,123.95,1260);
         assertEquals(156.18,resultado,1);
     }
+    @Test
+    public void potassioSolo(){
+        Calculos_CorrecaoPotassio valor = new Calculos_CorrecaoPotassio();
+        double resultado = valor.potassioCtcSolo(5.76, 1.63, 0.15,5.35);
+        assertEquals(1.16,resultado,1);
+    }
+
 }

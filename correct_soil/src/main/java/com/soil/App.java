@@ -13,6 +13,8 @@ public class App
     {
         Calculos_CorrecaoCTC correcaoCtc = new Calculos_CorrecaoCTC();
         Calculos_CorrecaoFosforo correcaoFosforo = new Calculos_CorrecaoFosforo();
+        Calculos_CorrecaoPotassio correcaoPotassio = new Calculos_CorrecaoPotassio();
+
         double teor_fosforo_ideal=0;
         double teor_calcio_ideal=0;
         double teor_potassio_ideal=0;
@@ -36,6 +38,8 @@ public class App
         double superfosfato_simples = 0;
         double enxofre = 0;
         double custo_fosforo = 0;
+        double potassio_solo = 0;
+        double potassio_desejada = 0;
 
         h_Al = 5.35;
 
@@ -77,6 +81,8 @@ public class App
         superfosfato_simples = correcaoFosforo.superfosfato_Simples(12, 1, quantidade_aplicarFosforo, teor_fosforo_solo, 0.7);
         enxofre = correcaoFosforo.enxofre(quantidade_aplicarFosforo, 1);
         custo_fosforo = correcaoFosforo.custoFosforo(1, quantidade_aplicarFosforo, 1260);
+        potassio_solo = correcaoPotassio.potassioCtcSolo(5.76, 1.63, 0.15,h_Al);
+        potassio_desejada = correcaoPotassio.potassioCtcDesejada(textura);
         System.out.printf("Resultado S Cmol = %.2f\n",result_Scmol);
         System.out.printf("Resultado CTC Cmol = %.2f\n",result_CTCcmol);
         System.out.printf("Resultado V Atual = %.2f\n",result_V_At);
@@ -86,6 +92,9 @@ public class App
         System.out.printf("Superfosfato Simples= %.2f\n",superfosfato_simples);
         System.out.printf("Enxofre= %.2f\n",enxofre);
         System.out.printf("Custo fosforo= %.2f\n",custo_fosforo);
+        System.out.printf("Participação atual do POTASSIO na CTC do solo: %.2f\n",potassio_solo);
+        System.out.printf("Participação atual do POTASSIO na CTC desejada: %.2f\n",potassio_desejada);
+
 
 
 
