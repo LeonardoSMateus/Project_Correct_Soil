@@ -65,4 +65,10 @@ public class AppTest
         double resultado = valor.superfosfato_Simples(12, 1, 123.95, 8.59, 0.7);
         assertEquals(12.4,resultado,1);
     }
+    @Test
+    public void enxofre(){
+        Calculos_CorrecaoFosforo valor = new Calculos_CorrecaoFosforo();
+        double resultado = valor.enxofre(123.95,1);
+        assertEquals(34.71,resultado,1);
+    }
 }
