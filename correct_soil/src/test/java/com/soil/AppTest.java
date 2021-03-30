@@ -51,4 +51,18 @@ public class AppTest
         double resultado = carb.Calcula_Carbono(0);
         assertEquals(0,resultado,0);
     }
+    @Test
+    public void quantidadeAplicar(){
+        Calculos_CorrecaoFosforo quant = new Calculos_CorrecaoFosforo();
+        double resultado = quant.quantidadeAplicar(12,1,8.59,0.7);
+        System.out.printf("q = %.2f\n",resultado);
+
+        assertEquals(123.95,resultado,1);
+    }
+    @Test
+    public void superfosfatoSimples(){
+        Calculos_CorrecaoFosforo valor = new Calculos_CorrecaoFosforo();
+        double resultado = valor.superfosfato_Simples(12, 1, 123.95, 8.59, 0.7);
+        assertEquals(12.4,resultado,1);
+    }
 }
