@@ -11,7 +11,7 @@ public class Calculos_CorrecaoFosforo{
             return quantidade_aplicar;
         }
         else{
-            if(fonte_fosforo == 1){
+            if(fonte_fosforo == 1 ||fonte_fosforo == 5 ||fonte_fosforo == 12){
                 teor_p2O5 = 18;
             }else if(fonte_fosforo == 2){
                 teor_p2O5 = 41;
@@ -21,9 +21,6 @@ public class Calculos_CorrecaoFosforo{
             }
             else if(fonte_fosforo == 4){
                 teor_p2O5 = 45;
-            }
-            else if(fonte_fosforo == 5){
-                teor_p2O5 = 18;
             }
             else if(fonte_fosforo == 6){
                 teor_p2O5 = 33;
@@ -43,9 +40,7 @@ public class Calculos_CorrecaoFosforo{
             else if(fonte_fosforo == 11){
                 teor_p2O5 = 52;
             }
-            else if(fonte_fosforo == 12){
-                teor_p2O5 = 18;
-            }
+    
             quantidade_aplicar = (((teor_fosforoAtingir - teor_fosforo)*2*2.29)*100/eficiencia_fosforo/100)*100/teor_p2O5;
             return quantidade_aplicar;
         }
@@ -57,7 +52,7 @@ public class Calculos_CorrecaoFosforo{
         if(fonte_fosforo == 5){
             return (quantidade_aplicar*0.15);
         }else{
-            if(fonte_fosforo == 1){
+            if(fonte_fosforo == 1 ||fonte_fosforo == 5 ||fonte_fosforo == 12){
                 teor_p2O5 = 18;
             }else if(fonte_fosforo == 2){
                 teor_p2O5 = 41;
@@ -67,9 +62,6 @@ public class Calculos_CorrecaoFosforo{
             }
             else if(fonte_fosforo == 4){
                 teor_p2O5 = 45;
-            }
-            else if(fonte_fosforo == 5){
-                teor_p2O5 = 18;
             }
             else if(fonte_fosforo == 6){
                 teor_p2O5 = 33;
@@ -88,9 +80,6 @@ public class Calculos_CorrecaoFosforo{
             }
             else if(fonte_fosforo == 11){
                 teor_p2O5 = 52;
-            }
-            else if(fonte_fosforo == 12){
-                teor_p2O5 = 18;
             }
             double mmb24 = (((teor_fosforoAtingir - teor_fosforo)*2*2.29*100)/eficiencia_fosforo/100)*100/teor_p2O5*2.42;
             if(fonte_fosforo == 1){
