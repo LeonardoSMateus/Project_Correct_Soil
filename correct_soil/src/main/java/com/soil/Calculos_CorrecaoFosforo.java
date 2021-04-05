@@ -52,7 +52,7 @@ public class Calculos_CorrecaoFosforo{
         if(fonte_fosforo == 5){
             return (quantidade_aplicar*0.15);
         }else{
-            if(fonte_fosforo == 1 ||fonte_fosforo == 5 ||fonte_fosforo == 12){
+            if(fonte_fosforo == 1 ||fonte_fosforo == 12){
                 teor_p2O5 = 18;
             }else if(fonte_fosforo == 2){
                 teor_p2O5 = 41;
