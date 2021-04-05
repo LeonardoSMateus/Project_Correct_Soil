@@ -1,6 +1,6 @@
 package com.soil;
 
-public class Calculos_CorrecaoCTC extends App{
+public class Calculos_CorrecaoCTC{
     public static double CTC_cmol(double teor_calcio,double teor_mag,double teor_pot,double H_Al)
     {
         if((teor_calcio + teor_mag +teor_pot+H_Al)>0.01){

@@ -1,6 +1,6 @@
 package com.soil;
 
-public class Calculos_CorrecaoFosforo extends App {
+public class Calculos_CorrecaoFosforo{
     public double quantidadeAplicar(double teor_fosforoAtingir,double fonte_fosforo, double teor_fosforo,double eficiencia_fosforo)
     {
         double teor_p2O5 = 1;

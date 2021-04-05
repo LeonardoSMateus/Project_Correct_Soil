@@ -100,16 +100,6 @@ public class App
         System.out.printf("Participação atual do POTASSIO na CTC desejada= %.2f %%\n",potassio_desejada);
         System.out.printf("Quantidade Aplicar Potassio= %.2f\n",quantidade_aplicarPotassio);
         System.out.printf("Custo Potassio= %.2f\n",custo_potassio);
-
-
-
-
-
-
-
-
-
-
         System.out.printf("Teor Potassio ideal= %.2f\n",teor_potassio_ideal);
         System.out.printf("Teor Fosforo ideal = %.2f\n",teor_fosforo_ideal);
         System.out.printf("Teor Calcio ideal= %.2f\n",teor_calcio_ideal);
