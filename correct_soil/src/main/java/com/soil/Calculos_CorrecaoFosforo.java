@@ -8,13 +8,13 @@ public class Calculos_CorrecaoFosforo{
         double teor_p2O5;
         //double[] array_resultado;
         double[] array_resultado = {18,41,48,45,18,33,29,32,24,18.5,52,12};
-        teor_p2O5 = array_resultado[fonte_fosforo-1];
 
         if((teor_fosforoAtingir - teor_fosforo)<0.01){
             quantidade_aplicar = 0;
             return quantidade_aplicar;
         }
         else{
+            teor_p2O5 = array_resultado[fonte_fosforo-1];
             quantidade_aplicar = (((teor_fosforoAtingir - teor_fosforo)*2*2.29)*100/eficiencia_fosforo/100)*100/teor_p2O5;
             return quantidade_aplicar;
         }
@@ -24,10 +24,11 @@ public class Calculos_CorrecaoFosforo{
         double teor_p2O5;
         //double[] array_resultado;
         double[] array_resultado = {18,41,48,45,18,33,29,32,24,18.5,52,12};
-        teor_p2O5 = array_resultado[fonte_fosforo-1];
+       
         if(fonte_fosforo == 5){
             return (quantidade_aplicar*0.15);
         }else{
+            teor_p2O5 = array_resultado[fonte_fosforo-1];
             double mmb24 = (((teor_fosforoAtingir - teor_fosforo)*2*2.29*100)/eficiencia_fosforo/100)*100/teor_p2O5*2.42;
             if(fonte_fosforo == 1){
                 return (mmb24*0.1/(2.42));
@@ -51,7 +52,9 @@ public class Calculos_CorrecaoFosforo{
     public double enxofre(double quantidade_aplicar, Integer fonte_fosforo){
         double[] array_resultado = {0,quantidade_aplicar*0.28,quantidade_aplicar*0.2,quantidade_aplicar*0.09,
             quantidade_aplicar*0.16,quantidade_aplicar*0.28,quantidade_aplicar*0.52,quantidade_aplicar*0.53,quantidade_aplicar*0.45,quantidade_aplicar*0.28,quantidade_aplicar*0.44,0,quantidade_aplicar*0.18};
-
+            if(fonte_fosforo < 0 || fonte_fosforo>12){
+                return 0;
+            }
         return array_resultado[fonte_fosforo];
     }
 
