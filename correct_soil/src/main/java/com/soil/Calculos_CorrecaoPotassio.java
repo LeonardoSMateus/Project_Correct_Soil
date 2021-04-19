@@ -1,5 +1,4 @@
 package com.soil;
-
 public class Calculos_CorrecaoPotassio {
     public double potassioCtcSolo(double teor_calcio,double teor_magnesio, double teor_potassio, double teor_hal)
     {
@@ -36,5 +35,4 @@ public class Calculos_CorrecaoPotassio {
            }
            return 0;
     }
-
 }
