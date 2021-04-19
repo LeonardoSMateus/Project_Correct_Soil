@@ -3,7 +3,7 @@
 <pre>
 Nome: Carlos Vinicius R Gonçalves Ra:1914723
 # Project_Correct_Soil
-cloc Calculos_CorrecaoFosforo.java
+<h1>cloc Calculos_CorrecaoFosforo.java</h1>
        1 text file.
        1 unique file.
        0 files ignored.
@@ -43,5 +43,43 @@ Commit: 849495ce9510f3b5218d2370ea99eb7849677276
        -------------------------------------------------------------------------------
        Java                             1              0              0             37
        -------------------------------------------------------------------------------
+<p>Inicialmente tinhamos 8 estruturas condicionais agora com aas modificações caiu para 6</p>
+<h3>-----------------------------------------------------------------------------------------------</h3>
+<h1>cloc Calculos_CorrecaoPotassio.java</h1>
+       1 text file.
+       1 unique file.
+       0 files ignored.
+
+http://cloc.sourceforge.net v 1.64  T=0.01 s (117.0 files/s, 4446.5 lines/s)
+-------------------------------------------------------------------------------
+Language                     files          blank        comment           code
+-------------------------------------------------------------------------------
+Java                             1              0              0             38
+-------------------------------------------------------------------------------
+
+<h2>Problemas Identificados:</h2>
+      <p> comentários desnecessários
+       linhas em branco
+       Chaves consumindo espaços desnecessários
+       Váriaveis desnecessárias,  double quantidade_aplicar ,k_adicionar
+       Quatro ifs desnecessários na função quantidadeAplicarPotassio</p>
+
+<h2>Soluções Encontradas:</h2>
+<p>Na função quantidadeAplicarPotassio foi tirada as variaveis double quantidade_aplicar ,k_adicional, no lugar do if foi colocada uma array, que dependendo da fonte_potassioUtilizar ele vai colocar na array o valor correto a fazer </p>
+<h2>Código após as modificações:</h2>
+Commit: 
+cloc Calculos_CorrecaoPotassio.java
+       1 text file.
+       1 unique file.
+       0 files ignored.
+
+http://cloc.sourceforge.net v 1.64  T=0.03 s (33.1 files/s, 728.8 lines/s)
+-------------------------------------------------------------------------------
+Language                     files          blank        comment           code
+-------------------------------------------------------------------------------
+Java                             1              0              0             22
+-------------------------------------------------------------------------------
+<p>Inicialmente tinhamos 6 estruturas condicionais agora com aas modificações caiu para 2</p>
+
  <pre>
 </html>

@@ -98,7 +98,6 @@ public class AppTest
     public void quantidadeAplicarPotassio(){
         Calculos_CorrecaoPotassio valor = new Calculos_CorrecaoPotassio();
         double resultado = valor.quantidadeAplicarPotassio(1,0.15,3.0,valor.potassioCtcSolo(5.76, 1.63, 0.15,5.35));
-        System.out.println(resultado);
         assertEquals(450.55,resultado,1);
     }
 
