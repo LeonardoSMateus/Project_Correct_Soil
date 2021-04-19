@@ -15,7 +15,7 @@ Curso: Engenharia de Computação
        Java                             1              7              2             53
        -------------------------------------------------------------------------------
 <h2>Problemas Identificados:</h2>
-      <p>comentários desnecessários
+      <p>     comentários desnecessários
        linhas em branco
        Chaves consumindo espaços desnecessários
        Váriaveis desnecessárias,  double quantidade_aplicar ,teor_p2O5, mmb24.
@@ -53,7 +53,7 @@ Commit: 849495ce9510f3b5218d2370ea99eb7849677276
        -------------------------------------------------------------------------------
 
 <h2>Problemas Identificados:</h2>
-      <p> comentários desnecessários
+      <p>     comentários desnecessários
        linhas em branco
        Chaves consumindo espaços desnecessários
        Váriaveis desnecessárias,  double quantidade_aplicar ,k_adicionar
