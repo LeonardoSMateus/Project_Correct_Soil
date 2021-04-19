@@ -3,7 +3,7 @@
 Autor: Carlos Vinicius R Gonçalves
 Curso: Engenharia de Computação
 # Project_Correct_Soil
-<h2>Código Atual classe Calculos_CorrecaoFosforo<h2>
+<h2>Código Atual classe Calculos_CorrecaoFosforo</h2>
        1 text file.
        1 unique file.
        0 files ignored.
@@ -46,7 +46,7 @@ Commit: 849495ce9510f3b5218d2370ea99eb7849677276
        -------------------------------------------------------------------------------
 <p>Inicialmente tinhamos 8 estruturas condicionais agora com aas modificações caiu para 6</p>
 <h3>-----------------------------------------------------------------------------------------------</h3>
-<h2>Código Atual classe Calculos_CorrecaoPotassio<h2>
+<h2>Código Atual classe Calculos_CorrecaoPotassio</h2>
        1 text file.
        1 unique file.
        0 files ignored.
@@ -67,7 +67,8 @@ Commit: 849495ce9510f3b5218d2370ea99eb7849677276
 
 <h2>Soluções Encontradas:</h2>
 <pre>
-<p>Na função quantidadeAplicarPotassio foi tirada as variaveis double quantidade_aplicar ,k_adicional, no lugar do if foi colocada uma array, que dependendo da fonte_potassioUtilizar ele vai colocar na array o valor correto a fazer </p>
+<p>Na função quantidadeAplicarPotassio foi tirada as variaveis double quantidade_aplicar ,k_adicional, 
+no lugar do if foi colocada uma array, que dependendo da fonte_potassioUtilizar ele vai colocar na array o valor correto a fazer </p>
 <h2>Código após as modificações:</h2></pre>
 Commit: bd1ca51882e9af7e1c8a958c2fe2b2843c5052fa
 cloc Calculos_CorrecaoPotassio.java
