@@ -23,12 +23,13 @@ Curso: Engenharia de Computação
        Operações com valores multplicados e divididos</p>
        
 <h2>Soluções Encontradas:</h2>
+<pre>
        <p>Na função quantidadeAplicar foi entendido melhor o problema e foi observado que o else não 
        é necessário já que se não cair na condição if, o codigo deve retornar mesmo a operacão de quantidade a aplicar, 
        e tambem nessa operação o valor 100 é multiplicado e dividio assim desnecessário.Em seguida na  função superfosfato_Simples tem um Else que 
        não é necessario pois o se a condição cair no if ela tem um retorno assim não é preciso de um else. 
        Nessa mesma função é possível ver a variavel mmb24 é multiplicada por 2,42 e 100 mas logo em seguida é divida por o mesmo valor 
-       assim não é necessário este valor, está variavel será excluida tbm pois o codigo dela pode ser colocado direto. </p>
+       assim não é necessário este valor, está variavel será excluida tbm pois o codigo dela pode ser colocado direto. </p></pre>
 
 <h2>Código após as modificações:</h2>
 Commit: 849495ce9510f3b5218d2370ea99eb7849677276
@@ -65,8 +66,9 @@ Commit: 849495ce9510f3b5218d2370ea99eb7849677276
        Quatro ifs desnecessários na função quantidadeAplicarPotassio</p>
 
 <h2>Soluções Encontradas:</h2>
+<pre>
 <p>Na função quantidadeAplicarPotassio foi tirada as variaveis double quantidade_aplicar ,k_adicional, no lugar do if foi colocada uma array, que dependendo da fonte_potassioUtilizar ele vai colocar na array o valor correto a fazer </p>
-<h2>Código após as modificações:</h2>
+<h2>Código após as modificações:</h2></pre>
 Commit: bd1ca51882e9af7e1c8a958c2fe2b2843c5052fa
 cloc Calculos_CorrecaoPotassio.java
        1 text file.
