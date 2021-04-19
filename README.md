@@ -8,13 +8,14 @@ cloc Calculos_CorrecaoFosforo.java
        1 unique file.
        0 files ignored.
 
-http://cloc.sourceforge.net v 1.64  T=0.04 s (28.1 files/s, 1741.7 lines/s)
--------------------------------------------------------------------------------
-Language                     files          blank        comment           code
--------------------------------------------------------------------------------
-Java                             1              7              2             53
--------------------------------------------------------------------------------
+       http://cloc.sourceforge.net v 1.64  T=0.04 s (28.1 files/s, 1741.7 lines/s)
+       -------------------------------------------------------------------------------
+       Language                     files          blank        comment           code
+       -------------------------------------------------------------------------------
+       Java                             1              7              2             53
+       -------------------------------------------------------------------------------
 Problemas Identificados:
+
        comentários desnecessários
        linhas em branco
        Chaves consumindo espaços desnecessários
