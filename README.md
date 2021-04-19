@@ -21,7 +21,7 @@ Problemas Identificados:
        Operações com valores multplicados e divididos
        
 Soluções Encontradas:
-       Na função quantidadeAplicar foi entendido melhor o problema e foi observado que o else não é necessário já que se não cair na condição if, o codigo deve retornar mesmo a operacão de quantidade a aplicar, e tambem nessa operação o valor 100 é multiplicado e dividio assim desnecessário.Em seguida na  função superfosfato_Simples tem um Else que não é necessario pois o se a condição cair no if ela tem um retorno assim não é preciso de um else. Nessa mesma função é possível ver a variavel mmb24 é multiplicada por 2,42 e 100 mas logo em seguida é divida por o mesmo valor assim não é necessário este valor, está variavel será excluida tbm pois o codigo dela pode ser colocado direto. 
+       Na função quantidadeAplicar foi entendido melhor o problema e foi observado que o else não<br>  é necessário já que se não cair na condição if, o codigo deve retornar mesmo a <br>operacão de quantidade a aplicar, e tambem nessa operação o valor 100 é multiplicado e <br>dividio assim desnecessário.Em seguida na  função superfosfato_Simples tem um Else que <br>não é necessario pois o se a condição cair no if ela tem um retorno assim não é preciso <br>de um else. Nessa mesma função é possível ver a variavel mmb24 é multiplicada por 2,42 <br>e 100 mas logo em seguida é divida por o mesmo valor assim não é necessário este valor, <br>está variavel será excluida tbm pois o codigo dela pode ser colocado direto. 
 
 Código após as modificações:
 
