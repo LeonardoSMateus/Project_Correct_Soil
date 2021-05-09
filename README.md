@@ -77,7 +77,7 @@ cloc Calculos_CorrecaoPotassio.java
        -------------------------------------------------------------------------------
 <p>Inicialmente tinhamos 6 estruturas condicionais agora com as modificações caiu para 2</p>
  
- # RELÁTORIO DE TESTE DO PROJETO CORRECAO DE SOLO
+ # RELATÓRIO DE TESTE DO PROJETO CORREÇÃO DE SOLO
  ### Nome: Leonardo de Souza Mateus
 
  ## Classe Calculos_CorrecaoCTC
