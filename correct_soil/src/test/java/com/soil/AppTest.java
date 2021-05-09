@@ -54,8 +54,8 @@ public class AppTest
     @Test
     public void quantidadeAplicar(){
         Calculos_CorrecaoFosforo quant = new Calculos_CorrecaoFosforo();
-        double resultado = quant.quantidadeAplicar(12,1,8.59,0.7);
-        assertEquals(123.95,resultado,1);
+        //double resultado = quant.quantidadeAplicar(12,1,8.59,0.7);
+        //assertEquals(123.95,resultado,1);
     }
     @Test
     public void superfosfatoSimples(){
@@ -66,8 +66,8 @@ public class AppTest
     @Test
     public void enxofre(){
         Calculos_CorrecaoFosforo valor = new Calculos_CorrecaoFosforo();
-        double resultado = valor.enxofre(123.95,1);
-        assertEquals(34.71,resultado,1);
+        //double resultado = valor.enxofre(123.95,1);
+        //assertEquals(34.71,resultado,1);
     }
     @Test
     public void custoFosforo(){
@@ -154,4 +154,27 @@ public class AppTest
         assertEquals(0.31538234482758615, CP.custoPotassio(2500.0, CP.quantidadeAplicarPotassio(1, 0.15, 3.0, 
                                                                                             CP.potassioAtualNaCTCSolo(5.76, 1.63, 0.15, 5.35)), 4,1),0.0);
     }
+    
+    @Test
+    public void correcaoERecuperacaoDoFosforoTest(){
+        Calculos_CorrecaoFosforo CF = new Calculos_CorrecaoFosforo();
+        
+        assertEquals(123.95079365079366, CF.quantidadeAplicar(12, 1, 8.59, 70),0.0);
+        assertEquals(15.266666666666666, CF.quantidadeAplicar(11, 1, 10.58, 70),0.0);
+        assertEquals(0.0, CF.quantidadeAplicar(10, 1, 10.23, 70),0.0);
+        
+        assertEquals(156.178, CF.custoFosforo(1, CF.quantidadeAplicar(12, 1, 8.59, 70), 1260.0),0.0);
+        assertEquals(19.236, CF.custoFosforo(1, CF.quantidadeAplicar(11, 1, 10.58, 70), 1260.0),0.0);
+        assertEquals(0.0, CF.custoFosforo(1, CF.quantidadeAplicar(10, 1, 10.23, 70), 1260.0),0.0);
+        
+        assertEquals(12.395079365079367, CF.enxofre_Adicional(CF.quantidadeAplicar(12, 1, 8.59, 70), 1),0.0);
+        assertEquals(1.5266666666666666, CF.enxofre_Adicional(CF.quantidadeAplicar(11, 1, 10.58, 70), 1),0.0);
+        assertEquals(0.0, CF.enxofre_Adicional(CF.quantidadeAplicar(10, 1, 10.23, 70), 1),0.0);
+        
+        assertEquals(34.70622222222223, CF.calcio_Adicional(CF.quantidadeAplicar(12, 1, 8.59, 70), 1),0.0);
+        assertEquals(4.274666666666667, CF.calcio_Adicional(CF.quantidadeAplicar(11, 1, 10.58, 70), 1),0.0);
+        assertEquals(0.0, CF.calcio_Adicional(CF.quantidadeAplicar(10, 1, 10.23, 70), 1),0.0);
+        
+    }
+    
 }
