@@ -76,6 +76,32 @@ cloc Calculos_CorrecaoPotassio.java
        Java                             1              0              0             22
        -------------------------------------------------------------------------------
 <p>Inicialmente tinhamos 6 estruturas condicionais agora com as modificações caiu para 2</p>
+ 
+ # RELÁTORIO DE TESTE DO PROJETO CORRECAO DE SOLO
+ ### Nome: Leonardo de Souza Mateus
 
+ ## Classe Calculos_CorrecaoCTC
+ #### Erros encontrados:
+       * Valores ideais de nutrientes no solo de acordo com a textura do solo não implementado
+       * Método Cálculo do carbono incorreto
+#### <a href="https://github.com/LeonardoSMateus/Project_Correct_Soil/commit/569f94d6398eac163e05e701c0c823a21632251b"> Solução para os problemas encontrados </a>
+
+
+ ## Classe Calculos_CorrecaoFosforo
+ #### Erros encontrados:
+       * Cálculo errado do custo da fonte de fosforo quilo por hectare
+       * Método SuperfosfatoSimples realizando o mesmo cálculo do método enxofre
+       * Método Enxofre realiza o cálculo do cálcio adicional e não do enxofre 
+       * Cálculo do enxofre adicional não implementado
+#### <a href="https://github.com/LeonardoSMateus/Project_Correct_Soil/commit/ba75c5a4c25c98b4eb9f9e3d5c2ea72f788959ea"> Solução para os problemas encontrados </a>
+
+
+ ## Classe Calculos_CorrecaoPotassio
+ #### Erros encontrados:
+       * Método com nomenclatura errada, potassioCtcDesejada realizando cálculos do potassioIdealNaCTC que é diferente do desejado
+       * Participação do POTÁSSIO na CTC, após correção não implementado
+       * Quantidade Aplicar da Fonte de Potassio Retornando valores negativos       
+       * Cálculo do custo da fonte de potassio quilo por hectare não mapeaou a quarta fonte
+#### <a href="https://github.com/LeonardoSMateus/Project_Correct_Soil/commit/8f1499260c1a4b64478e1d8491acfb8e6885c1a1"> Solução para os problemas encontrados </a>
  <pre>
 </html>
